@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js --host localhost --port 3000 --cache ./cache-data",
     "start:dev": "nodemon index.js"
   },
   "repository": {
@@ -21,6 +22,8 @@
   "homepage": "https://github.com/iJIJI9I/backend-course-2025-6#readme",
   "dependencies": {
     "commander": "^14.0.2",
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
     "superagent": "^10.2.3"
   },
   "devDependencies": {
