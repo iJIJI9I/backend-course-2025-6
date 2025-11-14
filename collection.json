@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "28d3d371-13ff-482e-8b35-f3d78205d868",
+		"name": "My Collection",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50083034",
+		"_collection_link": "https://ijiji9i-1484130.postman.co/workspace/iJIJI9I's-Workspace~db3b9fcb-2681-4d8d-80d1-71653ba87e37/collection/50083034-28d3d371-13ff-482e-8b35-f3d78205d868?action=share&source=collection_link&creator=50083034"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/search",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1763136130168",
+							"type": "text"
+						},
+						{
+							"key": "has_photo",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/search",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/inventory/1763147384322",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/inventory/1763147384322",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"inventory",
+						"1763147384322"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/inventory/1763147384322/photo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "postman-cloud:///1f0c179b-46a3-4bf0-99e0-e9b3686081f4"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/inventory/1763147384322/photo",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"inventory",
+						"1763147384322",
+						"photo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/inventory/1763147384322",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inventory_name\": \"Супер оновлена картинка\",\r\n    \"description\": \"Ця картинка краще\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/inventory/1763147384322",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"inventory",
+						"1763147384322"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/inventory/1763147384322",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/inventory/1763147384322",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"inventory",
+						"1763147384322"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/inventory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/inventory",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"description": "Гарна картинка",
+							"type": "file",
+							"src": "postman-cloud:///1f0c1881-679a-47f0-bfc0-2f3ce5994ee7"
+						},
+						{
+							"key": "inventory_name",
+							"value": "Картинка",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/register",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/SearchForm.html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/SearchForm.html",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"SearchForm.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/RegisterForm.html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/RegisterForm.html",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"RegisterForm.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
